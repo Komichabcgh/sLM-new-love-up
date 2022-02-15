@@ -220,7 +220,7 @@ class MirrorListener(listeners.MirrorListeners):
                 chat_id = str(self.message.chat.id)[4:]
                 msg = f"<b> 💐 Name 🥀:</b> <a href='https://t.me/c/{chat_id}/{self.uid}'>{link}</a>\n"
                 msg += f'<b>🌩 Total Files 💸: </b> {count}\n'
-                msg += f'cc: {uname}\n\n'
+                msg += f'Mirror BY 🧛‍♀️👉 : {uname}\n\n'
                 fmsg = ''
                 for index, item in enumerate(list(files), start=1):
                     msg_id = files[item]
@@ -244,10 +244,10 @@ class MirrorListener(listeners.MirrorListeners):
                 update_all_messages()
             return
         with download_dict_lock:
-            msg = f'<b> 💐 Filename: </b><code>{download_dict[self.uid].name()}</code>\n<b>Size: </b><code>{size}</code>'
+            msg = f'<b> 💐 Filename: </b><code>{download_dict[self.uid].name()}</code>\n<b>Size 💝: </b><code>{size}</code>'
             if os.path.isdir(f'{DOWNLOAD_DIR}/{self.uid}/{download_dict[self.uid].name()}'):
-                msg += '\n<b>💌 Type: </b><code>Folder 📁</code>'
-                msg += f'\n<b>🎊 SubFolders: </b><code>{folders}</code>'
+                msg += '\n<b>💌 Type: </b><code>FФLDΞЯ 📁</code>'
+                msg += f'\n<b>✨ suвfσldєrs 🗂: </b><code>{folders}</code>'
                 msg += f'\n<b>💸 Files : </b><code>{files}</code>'
             else:
                 msg += f'\n<b>💌 Type : </b><code>{typ}</code>'
