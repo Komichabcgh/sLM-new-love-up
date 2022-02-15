@@ -140,9 +140,9 @@ def get_readable_message():
                 if download.status() == MirrorStatus.STATUS_CLONING:
                     msg += f"\n<b>Cloned:</b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}</code>"
                 elif download.status() == MirrorStatus.STATUS_UPLOADING:
-                    msg += f"\n<b> 🕊 Uploaded 💃 : </b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}️️️️🤣</code>"
+                    msg += f"\n<b>⌈➳ 👰Uploaded 💃 : </b> <code>{get_readable_file_size(download.processed_bytes())} ꖅ</code> of <code>{download.size()}️️️️🤣</code>"
                 else:
-                    msg += f"\n<b>⌈➳ 👰 Downloaded 💃 :</b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}</code>"
+                    msg += f"\n<b>⌈➳ 👰 Downloaded 💃 :</b> <code>{get_readable_file_size(download.processed_bytes())} ཚ</code> of <code>{download.size()}</code>"
                 msg += f"\n<b>⌈➳ 📯 Speed  ⚡ ⪡」:</b> <code>{download.speed()} ⇵</code>"
 
                 msg += f"\n<b>⌈➳ 🕰 Estimated Time ⏳⪡」: </b> <code>{download.eta()}⌛</code>"
