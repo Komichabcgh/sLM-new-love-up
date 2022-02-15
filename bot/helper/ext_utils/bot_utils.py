@@ -154,8 +154,8 @@ def get_readable_message():
                 except:
                     pass
                 try:
-                    msg += f"\n<b>⌈➳ 🤑 Seeders 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🕯</code>" 
-                          msg +=f"\n<b>⌈➳ ☠️ Leechers 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🌀</code>"
+                    msg += f"\n<b>⌈➳ 🤑 Seeders 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🕯</code>" \
+                          msg += f"\n<b>⌈➳ ☠️ Leechers 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🌀</code>"
                 except:
                     pass
                 msg += f"\n<b> 🤷‍♀️ To Cancel 👉 🤦‍♀️ : </b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
