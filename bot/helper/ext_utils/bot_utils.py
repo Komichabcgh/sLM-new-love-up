@@ -145,7 +145,7 @@ def get_readable_message():
                     msg += f"\n<b>⌈➳ 👰 Downloaded 💃 :</b> <code>{get_readable_file_size(download.processed_bytes())}</code> of <code>{download.size()}</code>"
                 msg += f"\n<b>⌈➳ 📯 Speed  ⚡ ⪡」:</b> <code>{download.speed()} ⇵</code>"
 
-                msg += f"\n<b>⌈➳ 🕰 Estimated time of arrival ⏳⪡」: </b> <code>{download.eta()}⌛</code>"
+                msg += f"\n<b>⌈➳ 🕰 Estimated Time ⏳⪡」: </b> <code>{download.eta()}⌛</code>"
 
 
                 try:
@@ -154,8 +154,8 @@ def get_readable_message():
                 except:
                     pass
                 try:
-                    msg += f"\n<b>⌈➳ 🤑 Seeders 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🕯</code>" \
-                           f" | <b>⌈➳ ☠️ Leechers 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🔋</code>"
+                    msg += f"\n<b>⌈➳ 🤑 Seeders 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🕯</code>" 
+                          msg +=f"\n<b>⌈➳ ☠️ Leechers 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🌀</code>"
                 except:
                     pass
                 msg += f"\n<b> 🤷‍♀️ To Cancel 👉 🤦‍♀️ : </b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
