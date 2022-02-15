@@ -73,7 +73,7 @@ def update_all_messages():
     msg, buttons = get_readable_message()
     msg += f"<b>⌈➳ 🖥 :</b> <code>{psutil.cpu_percent()}%</code>" \
            f" <b>⌈➳♻ :</b> <code>{psutil.virtual_memory().percent}%</code>" \
-           f" <b>⌈➳Space 🎯 :</b> <code>{psutil.disk_usage('/').percent}%</code>"
+           f" <b>⌈➳ 🎯 :</b> <code>{psutil.disk_usage('/').percent}%</code>"
     with download_dict_lock:
         dlspeed_bytes = 0
         uldl_bytes = 0
