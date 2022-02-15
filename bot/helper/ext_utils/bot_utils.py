@@ -25,7 +25,7 @@ class MirrorStatus:
     STATUS_DOWNLOADING = "⌈➳ 🌟 Downloading..ꘉ.📥 ⏬ "
     STATUS_CLONING = " 🤶 Cloning...♻️ "
     STATUS_WAITING = " 😡 Queued...📝 "
-    STATUS_FAILED = " 🧐 Failed 🚫.. Cleaning Download..."
+    STATUS_FAILED = " 🧐 Failed 🚫.. Cleaning..🌀"
     STATUS_PAUSE = " 🤷‍♀️ Paused...⏸ "
     STATUS_ARCHIVING = " 💝 Archiving...🔐 "
     STATUS_EXTRACTING = " 💔 Extracting...📂 "
