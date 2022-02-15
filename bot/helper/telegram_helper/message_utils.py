@@ -71,7 +71,7 @@ def update_all_messages():
     free = get_readable_file_size(free)
     currentTime = get_readable_time(time.time() - botStartTime)
     msg, buttons = get_readable_message()
-    msg += f"<b>⌈➳🖥 :</b> <code>{psutil.cpu_percent()}%</code>" \
+    msg += f"<b>⌈➳ 🖥 :</b> <code>{psutil.cpu_percent()}%</code>" \
            f" <b>⌈➳♻ :</b> <code>{psutil.virtual_memory().percent}%</code>" \
            f" <b>⌈➳Space 🎯 :</b> <code>{psutil.disk_usage('/').percent}%</code>"
     with download_dict_lock:
