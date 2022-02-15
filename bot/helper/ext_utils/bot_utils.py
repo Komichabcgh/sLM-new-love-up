@@ -129,7 +129,7 @@ def get_readable_message():
             start = COUNT
         for index, download in enumerate(list(download_dict.values())[start:], start=1):
             msg += f"<b>⌈➳🗃 Filename 💌 : </b> <code>{download.name()} ￫♼</code>"
-            msg += f"\n<b>⌈➳ 🔥 Status 🧐 ⪡」:</b>"
+            msg += f"\n<b>⌈➳ 🔥 INFO 🧐 ⪡」:</b>"
             msg += f"\n<i>{download.status()}</i>"
             if download.status() not in [
                 MirrorStatus.STATUS_ARCHIVING,
@@ -154,8 +154,8 @@ def get_readable_message():
                 except:
                     pass
                 try:
-                    msg += f"\n<b>⌈➳ 🤑 SEDS 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🌱</code>" \
-                           f" | <b>⌈➳ ☠️ LEHS 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🩸</code>"
+                    msg += f"\n<b>⌈➳ 🤑 SEDS 👹 ⪡:</b> <code>{download.torrent_info().num_seeds}🌱</code>" \
+                           f"<b>⌈➳ ☠️ LEHS 💀 ⪡:</b> <code>{download.torrent_info().num_leechs}🩸</code>"
                 except:
                     pass
                 msg += f"\n<b>⌈➳ 🤷‍♀️ Cancel 👉 🤦‍♀️ : </b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
