@@ -154,7 +154,7 @@ def get_readable_message():
                 except:
                     pass
                 try:
-                    msg += f"\n<b>⌈➳ 🤑 SEDS 👹 ⪡:</b> <code>{download.torrent_info().num_seeds}🌱</code>" \
+                    msg += f"\n<b>⌈➳ 🤑 SEDS 👹 ⪡:</b> <code>{download.torrent_info().num_seeds}☆</code>" \
                            f"<b>⌈➳ ☠️ LEHS 💀 ⪡:</b> <code>{download.torrent_info().num_leechs}🩸</code>"
                 except:
                     pass
