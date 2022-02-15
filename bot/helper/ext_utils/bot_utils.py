@@ -149,16 +149,16 @@ def get_readable_message():
 
 
                 try:
-                    msg += f"\n<b>⌈➳📡 INFO ⚓️ ⪡」:- Seeders 🌹:</b> <code>{download.aria_download().num_seeders}</code>" \
-                           f" | <b> Peers 🥀: </b> <code>{download.aria_download().connections}</code>"
+                    msg += f"\n<b>⌈➳📡 Bar ⚓️ ⪡」:- SEDS 🌹:</b> <code>{download.aria_download().num_seeders}</code>" \
+                           f" | <b> PRS 🥀: </b> <code>{download.aria_download().connections}</code>"
                 except:
                     pass
                 try:
-                    msg += f"\n<b>⌈➳ 🤑 Seeders 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🕯</code>" \
-                           f" | <b>⌈➳ ☠️ Leechers 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🌱</code>"
+                    msg += f"\n<b>⌈➳ 🤑 SEDS 👹 ⪡」:</b> <code>{download.torrent_info().num_seeds} 🌱</code>" \
+                           f" | <b>⌈➳ ☠️ LEHS 💀 ⪡」:</b> <code>{download.torrent_info().num_leechs} 🩸</code>"
                 except:
                     pass
-                msg += f"\n<b> 🤷‍♀️ To Cancel 👉 🤦‍♀️ : </b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
+                msg += f"\n<b>⌈➳ 🤷‍♀️ Cancel 👉 🤦‍♀️ : </b> <code>/{BotCommands.CancelMirror} {download.gid()}</code>"
             msg += "\n\n"
             if STATUS_LIMIT is not None and index == STATUS_LIMIT:
                 break
